@@ -1,0 +1,294 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo neutro */
+    color: #333;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333; /* Gris oscuro */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    background-color: #333; /* Gris oscuro */
+    color: white;
+    padding: 20px;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+header p {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+header .btn {
+    background-color: #707070; /* Gris intermedio */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+header .btn:hover {
+    background-color: #505050;
+}
+
+/* Sección de rocas */
+.rock-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #e0e0e0; /* Gris claro */
+    gap: 20px;
+}
+
+.rock-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.rock-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rock-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.rock-card .btn {
+    background-color: #707070; /* Gris intermedio */
+    color: white;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.rock-card .btn:hover {
+    background-color: #505050;
+}
+
+/* Sección de información sobre las rocas */
+.rock-info-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9; /* Gris muy claro */
+}
+
+.rock-info-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.rock-info-section img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.rock-info-section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Sección ¿Quiénes somos? */
+.about-section {
+    padding: 40px;
+    background-color: #cccccc; /* Gris medio */
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.about-image img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Gris oscuro */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .rock-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rock-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .team p {
+        font-size: 1em;
+    }
+}
+
+
+.definition-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.definition-text {
+    width: 60%; /* Ajusta el ancho del texto */
+    padding-right: 20px;
+}
+
+.definition-text h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.definition-text p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.definition-image {
+    width: 35%; /* Ajusta el ancho de la imagen */
+}
+
+.definition-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #e0e0e0;
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: right;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.team-member h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.team-member p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}z
+
